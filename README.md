@@ -102,24 +102,14 @@ tools to install.
 
 ---
 
-## Step 4 — Connect the contact form (optional)
+## Step 4 — Contact form (removed)
 
-The form works as soon as you connect it, and until then it tells visitors to email you instead, so
-the page is never broken.
+There is no contact form. The Contact section is a short line plus an Email button and a LinkedIn
+button, which is all most people use anyway.
 
-GitHub Pages only serves files — it can't run code, so it can't send email on its own. The usual free
-fix is [Formspree](https://formspree.io):
-
-1. Sign up (free tier: 50 messages/month, no card).
-2. Create a new form. You'll get an ID that looks like `xaybqwer`.
-3. In `index.html`, find `YOUR_FORM_ID` and replace it with yours:
-   ```html
-   <form ... action="https://formspree.io/f/xaybqwer" method="POST">
-   ```
-4. Submit the form once yourself — Formspree asks you to confirm your email on the first message.
-
-Don't want another account? Delete the whole `<form>` block. The LinkedIn and email buttons above it
-are enough.
+If you ever want a form back: GitHub Pages only serves files, so it can't send email itself. You'd
+sign up at [Formspree](https://formspree.io) (free tier, 50 messages/month), point a `<form>` at your
+endpoint, and the styles for it are still sitting in `assets/style.css` ready to use.
 
 ---
 
