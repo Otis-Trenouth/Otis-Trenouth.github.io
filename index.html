@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Keeps the page out of Google. Delete these two lines (and robots.txt)
+     if you ever decide you WANT people to find it by searching your name. -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- ═══════════════════════ EDIT: page title & preview ═══════════════════════ -->
+<title>Otis Trenouth — Engineering Portfolio</title>
+<meta name="description" content="Engineering portfolio of Otis Trenouth, University of British Columbia Okanagan.">
+<meta property="og:title" content="Otis Trenouth — Engineering Portfolio">
+<meta property="og:description" content="Engineering portfolio of Otis Trenouth, University of British Columbia Okanagan.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://otis-trenouth.github.io/">
+<!-- ═════════════════════════════════════════════════════════════════════════ -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ══════════════════════════════ NAVIGATION ══════════════════════════════ -->
+<nav class="nav">
+  <div class="wrap nav__inner">
+    <!-- EDIT: your name -->
+    <a class="nav__name" href="#top">Otis Trenouth</a>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <!-- EDIT: your resume lives at assets/resume.pdf -->
+      <li><a class="nav__cta" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ═════════════════════════════════ HERO ═════════════════════════════════ -->
+<header class="hero wrap" id="top">
+
+  <!-- EDIT: replace assets/photo.jpg with your own headshot (square works best).
+       Until you add it, the circle below shows your initials instead. -->
+  <img class="photo" src="assets/photo.jpg" alt="Portrait of Otis Trenouth"
+       onerror="this.remove(); document.getElementById('photoFallback').style.display='flex';">
+  <div class="photo photo--fallback" id="photoFallback" aria-hidden="true">OT</div>
+
+  <!-- ═══ EDIT BELOW: name, role, one-line tagline ═══ -->
+  <h1>Otis Trenouth</h1>
+  <p class="hero__role">Engineering Student &middot; UBC Okanagan</p>
+  <p class="hero__tagline">
+    Second-year engineering student interested in mechanical design and
+    hands-on problem solving. Currently looking for a summer co-op placement.
+  </p>
+  <!-- ═══ EDIT ABOVE ═══ -->
+
+  <div class="hero__actions">
+    <a class="btn btn--primary" href="assets/resume.pdf" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+      Resume
+    </a>
+
+    <!-- EDIT: paste your LinkedIn profile URL -->
+    <a class="btn" href="https://www.linkedin.com/in/your-profile/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.5 9.75h5v11.75h-5V9.75zm7.5 0h4.79v1.6h.07c.67-1.2 2.3-2.46 4.73-2.46 5.06 0 6 3.2 6 7.36v8.25h-5v-7.31c0-1.74-.03-3.98-2.5-3.98-2.5 0-2.88 1.9-2.88 3.86v7.43h-5V9.75z"></path>
+      </svg>
+      LinkedIn
+    </a>
+
+    <a class="btn" id="emailBtn" href="#contact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+        <path d="m2 7 10 6 10-6"></path>
+      </svg>
+      Email
+    </a>
+  </div>
+</header>
+
+
+<!-- ═════════════════════════════════ ABOUT ════════════════════════════════ -->
+<section class="section wrap" id="about">
+  <h2 class="section__title">About</h2>
+  <div class="prose">
+    <!-- ═══ EDIT BELOW: two or three sentences about you ═══ -->
+    <p>
+      Replace this with a short introduction. Who you are, what you are studying,
+      and what kind of engineering work genuinely interests you. Two or three
+      sentences is plenty — anyone reading this is deciding in about ten seconds
+      whether to keep scrolling.
+    </p>
+    <p>
+      A good second paragraph covers what you are looking for right now: a summer
+      co-op, a design team role, research experience. Being specific here makes it
+      easy for someone to help you.
+    </p>
+    <!-- ═══ EDIT ABOVE ═══ -->
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════ PROJECTS ══════════════════════════════ -->
+<section class="section wrap" id="projects">
+  <h2 class="section__title">Projects</h2>
+
+  <div class="projects">
+
+    <!-- ┌─────────────────────────────────────────────────────────────────┐
+         │  COPY THIS WHOLE <article> BLOCK TO ADD ANOTHER PROJECT.        │
+         │  Delete a block to remove a project. Nothing else to change.    │
+         └─────────────────────────────────────────────────────────────────┘ -->
+    <article class="card">
+      <p class="card__year">2025</p>
+      <h3 class="card__title">Project Title Goes Here</h3>
+      <p class="card__body">
+        Two to four sentences. Say what the problem was, what you actually did,
+        and what the outcome was. Numbers help — a percentage, a load, a
+        tolerance, a time saved. Write about your own contribution, not the
+        team's in general.
+      </p>
+      <ul class="card__tags">
+        <li>SolidWorks</li>
+        <li>FEA</li>
+        <li>Prototyping</li>
+      </ul>
+      <!-- Put the PDF in assets/projects/ and update the filename below.
+           No report yet? Delete this <a> line entirely. -->
+      <a class="card__link" href="assets/projects/project-one.pdf" target="_blank" rel="noopener">
+        Read the report
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 17 17 7"></path><path d="M7 7h10v10"></path>
+        </svg>
+      </a>
+    </article>
+
+    <article class="card">
+      <p class="card__year">2025</p>
+      <h3 class="card__title">Second Project Title</h3>
+      <p class="card__body">
+        Course projects count. Design team work counts. Something you built in
+        your garage counts. A first-year student with three honestly described
+        course projects reads better than one vague paragraph about passion.
+      </p>
+      <ul class="card__tags">
+        <li>MATLAB</li>
+        <li>Data Analysis</li>
+      </ul>
+      <a class="card__link" href="assets/projects/project-two.pdf" target="_blank" rel="noopener">
+        Read the report
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M7 17 17 7"></path><path d="M7 7h10v10"></path>
+        </svg>
+      </a>
+    </article>
+
+    <article class="card">
+      <p class="card__year">2024</p>
+      <h3 class="card__title">Third Project Title</h3>
+      <p class="card__body">
+        This card has no report link, to show you what that looks like. A project
+        without a PDF is completely fine — the description is doing the work.
+      </p>
+      <ul class="card__tags">
+        <li>Python</li>
+        <li>3D Printing</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+
+<!-- ═════════════════════════════════ SKILLS ═══════════════════════════════ -->
+<section class="section wrap" id="skills">
+  <h2 class="section__title">Skills</h2>
+
+  <div class="skills">
+    <!-- ═══ EDIT BELOW: delete what you don't have, add what you do.
+             Only list things you could actually talk about in an interview. ═══ -->
+    <div class="skills__group">
+      <h3>Software</h3>
+      <ul class="pills">
+        <li>SolidWorks</li>
+        <li>AutoCAD</li>
+        <li>ANSYS</li>
+        <li>MATLAB</li>
+        <li>Python</li>
+        <li>Excel</li>
+      </ul>
+    </div>
+
+    <div class="skills__group">
+      <h3>Technical</h3>
+      <ul class="pills">
+        <li>CAD &amp; Technical Drawing</li>
+        <li>Finite Element Analysis</li>
+        <li>Machining &amp; Fabrication</li>
+        <li>Data Analysis</li>
+        <li>Technical Writing</li>
+      </ul>
+    </div>
+    <!-- ═══ EDIT ABOVE ═══ -->
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════ CONTACT ═══════════════════════════════ -->
+<section class="section wrap" id="contact">
+  <h2 class="section__title">Contact</h2>
+
+  <p class="contact__intro">
+    Happy to hear about co-op openings, project collaborations, or anything else.
+    The quickest way to reach me is the form below.
+  </p>
+
+  <div class="contact__links">
+    <!-- EDIT: paste your LinkedIn profile URL (same as above) -->
+    <a class="btn" href="https://www.linkedin.com/in/your-profile/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.5 9.75h5v11.75h-5V9.75zm7.5 0h4.79v1.6h.07c.67-1.2 2.3-2.46 4.73-2.46 5.06 0 6 3.2 6 7.36v8.25h-5v-7.31c0-1.74-.03-3.98-2.5-3.98-2.5 0-2.88 1.9-2.88 3.86v7.43h-5V9.75z"></path>
+      </svg>
+      LinkedIn
+    </a>
+    <a class="btn" id="emailLink" href="#contact">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+        <path d="m2 7 10 6 10-6"></path>
+      </svg>
+      <span id="emailText">Show email address</span>
+    </a>
+  </div>
+
+  <!-- The form posts to Formspree, which emails you. See README step 4.
+       Replace YOUR_FORM_ID below with the id from your Formspree dashboard.
+       Until you do, the form politely tells visitors to use email instead. -->
+  <form class="form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <div class="field">
+      <label for="cf-name">Name</label>
+      <input id="cf-name" name="name" type="text" autocomplete="name" required>
+    </div>
+    <div class="field">
+      <label for="cf-email">Email</label>
+      <input id="cf-email" name="email" type="email" autocomplete="email" required>
+    </div>
+    <div class="field">
+      <label for="cf-message">Message</label>
+      <textarea id="cf-message" name="message" required></textarea>
+    </div>
+
+    <!-- Spam trap. Humans never see it; bots fill it in and get silently dropped. -->
+    <div class="hp" aria-hidden="true">
+      <label for="cf-website">Leave this empty</label>
+      <input id="cf-website" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+    </div>
+
+    <div>
+      <button class="btn btn--primary" type="submit">Send message</button>
+    </div>
+    <p class="form__status" id="formStatus" hidden></p>
+    <p class="form__note" id="formNote" hidden></p>
+  </form>
+</section>
+
+</main>
+
+<!-- ═════════════════════════════════ FOOTER ═══════════════════════════════ -->
+<footer class="footer wrap">
+  <!-- EDIT: your name -->
+  <p>&copy; <span id="year"></span> Otis Trenouth</p>
+  <p>Built with GitHub Pages.</p>
+</footer>
+
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   EDIT: your email address, split in two so scraper bots can't read it
+   straight out of the page source. The page reassembles it in the browser.
+   Example: user = "jane.doe", domain = "gmail.com"
+   ═════════════════════════════════════════════════════════════════════════ */
+var EMAIL_USER   = "yourname";
+var EMAIL_DOMAIN = "example.com";
+/* ═══════════════════════════ nothing to edit below ═══════════════════════ */
+
+(function () {
+  "use strict";
+
+  var address = EMAIL_USER + "@" + EMAIL_DOMAIN;
+
+  // Current year in the footer, so it never goes stale.
+  var yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Wire up the two email links.
+  var link = document.getElementById("emailLink");
+  var text = document.getElementById("emailText");
+  if (link && text) {
+    link.href = "mailto:" + address;
+    text.textContent = address;
+  }
+  var heroBtn = document.getElementById("emailBtn");
+  if (heroBtn) heroBtn.href = "mailto:" + address;
+
+  // ---- Contact form -------------------------------------------------------
+  var form   = document.getElementById("contactForm");
+  var status = document.getElementById("formStatus");
+  var note   = document.getElementById("formNote");
+  if (!form) return;
+
+  var configured = form.action.indexOf("YOUR_FORM_ID") === -1;
+
+  function say(message, kind) {
+    status.textContent = message;
+    status.className = "form__status form__status--" + kind;
+    status.hidden = false;
+  }
+
+  if (!configured) {
+    // No Formspree id yet: don't pretend the form works.
+    note.textContent = "This form is not connected yet — please email me directly at "
+                     + address + " in the meantime.";
+    note.hidden = false;
+  }
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    if (!configured) {
+      say("The form is not connected yet. Opening your email app instead.", "err");
+      window.location.href = "mailto:" + address;
+      return;
+    }
+
+    var button = form.querySelector("button[type=submit]");
+    var label  = button.textContent;
+    button.disabled = true;
+    button.textContent = "Sending...";
+
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" }
+    })
+      .then(function (response) {
+        if (response.ok) {
+          form.reset();
+          say("Thanks — your message is on its way. I'll get back to you soon.", "ok");
+        } else {
+          say("Something went wrong sending that. Please email me at " + address + ".", "err");
+        }
+      })
+      .catch(function () {
+        say("Couldn't reach the server. Please email me at " + address + ".", "err");
+      })
+      .finally(function () {
+        button.disabled = false;
+        button.textContent = label;
+      });
+  });
+})();
+</script>
+
+</body>
+</html>
