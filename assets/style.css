@@ -13,12 +13,20 @@
   --accent-text:   #ffffff;
   --accent-2:      #b06420;
 
+  /* Solid buttons (Resume, email) - the same navy in light and dark mode. */
+  --btn-bg:        #2b4a6f;
+  --btn-text:      #ffffff;
+
   /* Corner sharpness. 3px reads technical/drafted. Raise toward 12px
      for a softer, friendlier look. */
   --radius:        3px;
 
   /* Page width. Raise for a wider layout, lower for a narrower one. */
   --measure:       920px;
+
+  /* The site follows the visitor's device theme. Set this to "light" and
+     comment out the dark theme block below to force light for everyone. */
+  color-scheme: light dark;
 }
 /* ---------- END CHANGE THESE -------------------------------------------- */
 
@@ -43,21 +51,25 @@
 /* ---------- Dark theme tokens ------------------------------------------- */
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent:      #6fb3b8;
-    --accent-text: #0e1214;
-    --accent-2:    #e0a06b;
-    --bg:          #14171b;
-    --surface:     #1b1f25;
-    --text:        #e3e7ea;
-    --muted:       #939ca7;
-    --border:      #2a3038;
-    --rule:        #39414b;
-    --pill-bg:     #222730;
-    --shadow:      0 1px 1px rgba(0, 0, 0, .3);
-    --shadow-hover: 0 1px 2px rgba(0, 0, 0, .4), 0 10px 26px rgba(0, 0, 0, .4);
-    --nav-bg:      rgba(20, 23, 27, .88);
+    /* Neutral charcoal greys with a navy accent. */
+    --accent:      #9db7d4;   /* links, rules, tags - light enough to read */
+    --accent-text: #ffffff;
+    --accent-2:    #dba06f;
+    --btn-bg:      #2b4a6f;   /* dark blue solid buttons */
+    --btn-text:    #ffffff;
+    --bg:          #2a2c2f;
+    --surface:     #323539;
+    --text:        #eceef0;
+    --muted:       #a9aeb4;
+    --border:      #43474d;
+    --rule:        #4a4e54;
+    --pill-bg:     #3a3d42;
+    --shadow:      0 1px 1px rgba(0, 0, 0, .25);
+    --shadow-hover: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 26px rgba(0, 0, 0, .3);
+    --nav-bg:      rgba(42, 44, 47, .9);
   }
 }
+
 
 
 /* ---------- Base -------------------------------------------------------- */
@@ -181,14 +193,14 @@ a:hover { text-decoration-color: currentColor; }
 .nav__links a:hover { background: var(--pill-bg); color: var(--text); }
 
 .nav__links .nav__cta {
-  background: var(--accent);
-  color: var(--accent-text);
+  background: var(--btn-bg);
+  color: var(--btn-text);
   margin-left: 8px;
   font-weight: 550;
 }
 .nav__links .nav__cta:hover {
-  background: var(--accent);
-  color: var(--accent-text);
+  background: var(--btn-bg);
+  color: var(--btn-text);
   filter: brightness(1.12);
 }
 
@@ -278,11 +290,11 @@ a:hover { text-decoration-color: currentColor; }
 .btn:hover { border-color: var(--accent); box-shadow: var(--shadow); }
 
 .btn--primary {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: var(--accent-text);
+  background: var(--btn-bg);
+  border-color: var(--btn-bg);
+  color: var(--btn-text);
 }
-.btn--primary:hover { filter: brightness(1.12); border-color: var(--accent); }
+.btn--primary:hover { filter: brightness(1.12); border-color: var(--btn-bg); }
 
 .btn svg { width: 16px; height: 16px; flex: none; }
 
@@ -330,9 +342,9 @@ a:hover { text-decoration-color: currentColor; }
 
 .section__title {
   font-family: var(--mono);
-  font-size: .74rem;
-  font-weight: 600;
-  letter-spacing: .16em;
+  font-size: 1rem;
+  font-weight: 650;
+  letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--muted);
   margin: 0 0 30px;
@@ -510,6 +522,7 @@ a:hover { text-decoration-color: currentColor; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 168px;
+  grid-auto-flow: dense;   /* backfills gaps left by the big/wide/tall tiles */
   gap: 10px;
   margin-top: 26px;
   margin-bottom: 26px;
@@ -523,6 +536,7 @@ a:hover { text-decoration-color: currentColor; }
 }
 .strip__big  { grid-column: span 2; grid-row: span 2; }
 .strip__wide { grid-column: span 2; }
+.strip__tall { grid-row: span 2; }
 
 
 /* ---------- Contact ----------------------------------------------------- */
@@ -588,10 +602,7 @@ a:hover { text-decoration-color: currentColor; }
 }
 .form__status--ok  { background: color-mix(in srgb, #16a34a 14%, transparent); color: #15803d; }
 .form__status--err { background: color-mix(in srgb, #dc2626 14%, transparent); color: #b91c1c; }
-@media (prefers-color-scheme: dark) {
-  .form__status--ok  { color: #6ee7a8; }
-  .form__status--err { color: #fca5a5; }
-}
+
 
 
 /* ---------- Toast ------------------------------------------------------- */

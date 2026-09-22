@@ -90,10 +90,10 @@
     <!-- ═══ EDIT BELOW ═══ -->
     <p>
       I'm a third-year Civil Engineering student at UBC Okanagan. A lot of my
-      project work so far has circled back to water — an automated irrigation
-      system built around drought conditions in the Okanagan, and a
+      project work so far has circled back to water, including an automated
+      irrigation system built around drought conditions in the Okanagan and a
       pre-consultation study for a run-of-river hydroelectric site on a BC
-      river — alongside hands-on design and fabrication work.
+      river, alongside hands-on design and fabrication work.
     </p>
     <p>
       Outside of coursework I've spent five years as a lifeguard and swim
@@ -147,7 +147,7 @@
     </article>
 
     <article class="card">
-      <p class="card__year">First-Year Project</p>
+      <p class="card__year">Second-Year Project</p>
       <h3 class="card__title">Run-of-River Hydroelectric Pre-Consultation Report</h3>
       <p class="card__body">
         An assessment of a run-of-river hydroelectric system on a BC river,
@@ -208,7 +208,9 @@
       <p class="exp__meta">YYOGA Lonsdale &middot; Summer 2026</p>
       <p class="exp__desc">
         Handled check-ins, questions and studio turnover during back-to-back
-        classes.
+        classes. Helped new members get set up with memberships and class
+        bookings, and kept the front desk running smoothly during busy
+        morning and evening peaks.
       </p>
     </div>
 
@@ -275,17 +277,27 @@
   </p>
   <!-- ═══ EDIT ABOVE ═══ -->
 
-  <!-- Photos live in assets/. The first two get the large and wide slots;
-       swap the filenames to rearrange which photo goes where. -->
+  <!-- Photos live in assets/. Layout on desktop (4 columns x 3 rows):
+         summit = large, bike + hike = wide, ski = tall, the rest = small.
+       Order matters: the grid fills in the sequence below. The
+       object-position on each image picks which part of the photo shows. -->
   <div class="strip">
     <img class="strip__big" src="assets/outside-summit.jpg" loading="lazy"
+         style="object-position: center 55%;"
          alt="Standing on a rocky summit ridge above the snowline">
     <img class="strip__wide" src="assets/outside-bike.jpg" loading="lazy"
          alt="Mountain biking at sunset over the Okanagan">
-    <img src="assets/outside-ski.jpg" loading="lazy"
+    <img src="assets/outside-snowboard.jpg" loading="lazy"
+         style="object-position: center 40%;"
+         alt="Snowboarding down a narrow rocky chute">
+    <img class="strip__tall" src="assets/outside-ski.jpg" loading="lazy"
          alt="Skiing on a chairlift above the treeline">
-    <img src="assets/outside-hike.jpg" loading="lazy"
+    <img class="strip__wide" src="assets/outside-hike.jpg" loading="lazy"
+         style="object-position: center 45%;"
          alt="Hiking above Garibaldi Lake">
+    <img src="assets/outside-backpacking.jpg" loading="lazy"
+         style="object-position: center 62%;"
+         alt="Backpacking across an open meadow">
   </div>
 
   <ul class="pills pills--warm">
